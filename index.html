@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Informasi Daerah yang Semantic dan Accessible</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Informasi Daerah Saya - Kota Blitar</h1>
+    <nav aria-label="Navigasi utama">
+      <ul class="nav-list">
+      <li><a class="nav-link" href="#sejarah" class="nav-link">wisata sejarah</a></li>
+      <li><a class="nav-link" href="#potensi" class="nav-link">Potensi daerah</a></li>
+      <li><a class="nav-link" href="#form" class="nav-link">layanan informasi</a></li>
+      </ul>
+    </nav>
+  </header>
+ <div class="page-layout"></div> 
+  <main>
+    <article id="sejarah" class="card card--featured">
+      <span class="badge">Unggulan</span>
+      <h2>wisata sejarah</h2>
+      <p>Blitar dikenal luas sebagai Bumi Bung Karno karena menjadi tempat persemayaman Presiden Pertama RI, 
+        sekaligus memiliki peninggalan sejarah penting seperti Candi Penataran dari era kerajaan Nusantara.</p>
+      <img src="candi penataran.jpg" alt="Kemegahan candi utama Kompleks Candi Penataran di Nglegok Blitar dengan ukiran relief kuno">
+    </article>
+
+    <section id="potensi"> 
+      <h2>Potensi Daerah</h2>
+      <div class="card-list">
+        <article class="card">
+          <h3>Pertenakan dan Perkebunan</h3>
+          <p>Selain sejarah, Blitar memiliki potensi besar di bidang peternakan dan perkebunan teh di kawasan Sirah Kencong.</p>
+        <article class="card">
+          <h3>UMKM Lokal</h3>
+          <p>produk kerajinan tangan lokal yang didukung penuh oleh komunitas UMKM daerah.</p>
+        </article>
+      </div>
+    </section>
+    
+    <section id="form" class="card">
+      <h2>Kirim Pesan dan layanan informasi</h2>
+
+      <form action="#" method="post">
+        <div>
+          <label for="nama">Nama lengkap</label>
+          <input id="nama" name="nama" type="text"
+                 autocomplete="name" required>
+        </div>
+
+        <div>
+          <label for="email">Alamat email</label>
+          <input id="email" name="email" type="email"
+                 autocomplete="email" required>
+        </div>
+
+        <div>
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" minlength="10" required></textarea>
+        </div>
+
+        <button type="submit">Kirim pesan</button>
+      </form>
+    </section>
+  </main>
+    
+  <aside aria-labelledby="info-tambahan">
+    <h2 id="info-tambahan">Informasi Tambahan</h2>
+    <p>Kota Blitar memiliki berbagai agenda budaya tahunan yang menarik wisatawan lokal maupun mancanegara.</p>
+  </aside>
+  <footer>
+    <p>Dibuat untuk Konten informasi daerah.</p>
+  </footer>
+    
+</body>
+</html>
